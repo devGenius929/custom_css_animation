@@ -1,0 +1,100 @@
+
+<style type="text/css"> 
+.background-image--1578079137806, .background-image--1605568454731 {
+   margin: 0;
+  padding: 0;
+  font-family: monospace;
+  background-image: url(https://knbhost.com/gradient/change4.png), linear-gradient(
+    300deg,
+    #2c3e50,
+    #27ae60,
+    #2980b9,
+    #e74c3c,
+    #8e44ad
+  ) !important;
+  background-size: 400%;
+  animation: bganimation 33s infinite;
+  background-size: cover
+}
+
+.background-image.background-image--1578079137806.timed-section::before {
+    content: "";
+    position: absolute;
+    background-image: url();
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    height: 80%;
+    width: 100%;
+    z-index: 0;
+    background-image: linear-gradient(12deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 100%);
+}
+
+.lpl .background-image--1578079137806 {
+    background-image: url(https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/3290458/settings_images/6IwsWHn8SFNU13vOhrtg_change1.png);
+    position: relative;
+}
+
+.text {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 22px;
+}
+
+@keyframes bganimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  40% {
+    background-position: 100% ;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+  .isLoaded {
+      opacity: .7;
+      position: absolute;
+      top: auto;
+      z-index: 9999999;
+      width: 100%;
+      height: 100vh;
+  }
+
+
+
+
+</style> 
+
+<div class="lp1">
+
+
+</div>
+ 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+
+
+<script type="text/javascript">    
+
+loop();
+ var duration1 = 4000;
+ var duration2 = 4000;
+ 
+ function loop(){
+  $('.isLoaded').fadeIn(duration1, function() {
+        $('.isLoaded').fadeOut(duration2, loop);       
+    })
+ }
+ 
+ var image = $('#image-holder');
+    image.fadeOut(1000, function () {
+        image.css("background", "url('images/design-" + newColor + ".jpg')");
+        image.fadeIn(1000);
+    });
+</script>
+
